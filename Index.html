@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abiel Ramirez - Data Scientist & Systems Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --text: #2d3748;
+            --light-bg: #f7fafc;
+            --hover-bg: #ebf8ff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #e2e8f0;
+            padding: 30px;
+        }
+
+        .cv-container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: -0.5px;
+        }
+
+        .role {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 8px 0;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .contact-info a, .contact-info span {
+            color: #4a5568;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* SECTIONS */
+        section { margin-bottom: 30px; }
+
+        h2 {
+            font-size: 18px;
+            color: var(--primary);
+            text-transform: uppercase;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .summary { font-size: 15px; color: #4a5568; text-align: justify; }
+
+        /* HIGHLIGHT BOX */
+        .highlight-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-card {
+            background: var(--light-bg);
+            border-left: 4px solid var(--accent);
+            padding: 18px;
+            border-radius: 6px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: var(--hover-bg);
+        }
+
+        .highlight-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            color: var(--primary);
+        }
+
+        .highlight-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        /* EXPERIENCE & PROJECTS */
+        .job { margin-bottom: 25px; }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--primary);
+        }
+        .company { color: var(--accent); font-weight: 600; margin-bottom: 5px; display: block; }
+        
+        ul { padding-left: 20px; margin-top: 8px; }
+        li { font-size: 14px; margin-bottom: 6px; color: #4a5568; }
+
+        /* SKILLS */
+        .skills-tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #edf2f7;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        
+        .skill-tag:hover {
+            background: var(--accent);
+            color: white;
+            cursor: default;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .cv-container { box-shadow: none; padding: 0; }
+            .highlight-card { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <h1>Abiel Ramirez</h1>
+        <div class="role">Systems Engineer & Data Science Specialist</div>
+        <div class="contact-info">
+            <span>📍 Escobedo, Nuevo Leon, MX</span>
+            <a href="tel:+528120183202">📱 +52 81 2018 3202</a>
+            <a href="mailto:ingabielramirez@gmail.com">✉️ ingabielramirez@gmail.com</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Systems Engineer with a Master’s in Software Engineering (in progress) and a specialized focus on <strong>Predictive Analytics and Industrial Automation</strong>. Global Winner of the <strong>NASA SpaceApps 2025</strong>. Expert in bridging OT (Operational Technology) and IT through AI-driven solutions, time-series forecasting, and scalable software architecture.
+        </p>
+    </section>
+
+    <section>
+        <h2>Major Career Achievements</h2>
+        <div class="highlight-container">
+            <div class="highlight-card">
+                <h3>🏆 NASA SpaceApps 2025 Global Winner</h3>
+                <p>Developed "Aeris", an AI-powered model using PyTorch to predict global air quality with satellite data integration.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>📊 95% Sales Forecast Accuracy</h3>
+                <p>Engineered a Time-Series model using <strong>Prophet</strong> for XCF, predicting 12-month sales with only a 5% margin of error.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Expertise</h2>
+        <div class="skills-tag-container">
+            <span class="skill-tag">Python (Prophet, FastAPI, PyTorch)</span>
+            <span class="skill-tag">SQL (MySQL, SQL Server)</span>
+            <span class="skill-tag">C# / .NET MVC</span>
+            <span class="skill-tag">Docker / MLOps</span>
+            <span class="skill-tag">AI Agents (n8n)</span>
+            <span class="skill-tag">Time-Series Forecasting</span>
+            <span class="skill-tag">PLC Programming</span>
+            <span class="skill-tag">JavaScript / Bootstrap</span>
+            <span class="skill-tag">Git / GitHub</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Technical Projects</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span>Real Estate Price Predictor (MLOps Focus)</span>
+            </div>
+            <ul>
+                <li>Developed a machine learning model designed to predict real estate prices in the Canadian market based on historical data.</li>
+                <li>Designed the backend architecture by building a robust API using <strong>FastAPI</strong> and containerized the deployment environment utilizing <strong>Docker</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Automated Data Pipeline & Log Analysis</span>
+            </div>
+            <ul>
+                <li>Engineered a Python-based ETL process to extract, validate, and consolidate complex logistics data across <strong>MySQL and SQL Server</strong> databases.</li>
+                <li>Created automated scripts to parse raw system log text files, identify critical error statuses, and generate structured JSON reports for database ingestion.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span>Junior Full-Stack & Data Developer</span>
+                <span>2024 — Present</span>
+            </div>
+            <span class="company">XCF / LOGISNET</span>
+            <ul>
+                <li><strong>Predictive Modeling:</strong> Developed a high-precision sales engine using <strong>Prophet</strong>, enabling management to optimize inventory and financial planning for a 12-month horizon.</li>
+                <li><strong>Backend Architecture:</strong> Designed and maintained enterprise modules using <strong>C# and SQL Server</strong>, focusing on data integrity and processing speed.</li>
+                <li><strong>Workflow Automation:</strong> Implemented AI Agents via <strong>n8n</strong> to automate data extraction and report generation, reducing manual tasks by 40%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Automation Tech Specialist</span>
+                <span>2021 — 2024</span>
+            </div>
+            <span class="company">Schneider Electric</span>
+            <ul>
+                <li><strong>Industrial Analytics:</strong> Developed a SQL-based OEE (Overall Equipment Effectiveness) tracking system to identify and monetize production downtime.</li>
+                <li><strong>System Integration:</strong> Successfully bridged shop-floor PLC data with corporate databases to enable real-time troubleshooting.</li>
+                <li><strong>Technical Support:</strong> Reduced response time for critical machine failures across multiple Monterrey plants through custom code patches and logical optimization.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="job-header">
+            <span>Master in Software Engineering & Management</span>
+            <span>Expected 2026</span>
+        </div>
+        <span class="company">Utel Universidad</span>
+        
+        <div class="job-header" style="margin-top: 15px;">
+            <span>Bachelor in Systems Engineering</span>
+            <span>Graduated</span>
+        </div>
+        <span class="company">Utel Universidad</span>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <p style="font-size: 14px; color: #4a5568;"><strong>English:</strong> Professional Working Proficiency (B2/C1) | <strong>Spanish:</strong> Native</p>
+    </section>
+</div>
+
+</body>
+</html>
